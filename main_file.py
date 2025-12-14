@@ -15,7 +15,7 @@ user_details = {
     '1106':{'name':'rimi','age':32,'gender':'female','phone':68786736,'address':'mumbai-223243','balance':55000}
 }
 
-def login(user_id,password,user_details):
+def login(user_id,password,user_details): #login function
     id = input('enter user id:')
     pos = log.id_chk(id,user_id)
     if pos>=0:

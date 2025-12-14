@@ -2,7 +2,7 @@
 
 import cust_login as cust
 
-def signup(user_id,password,user_details):
+def signup(user_id,password,user_details): #signup function
     print('\n_____Enter the following details_____')
     name = input('enter your name: ').strip().lower()
     age = int(input('enter your age: '))
@@ -17,7 +17,7 @@ def signup(user_id,password,user_details):
     add_data(user_id,password,user_details,name,age,gen,p_no,adrs,bal,pwd,str(new_id))
 
 
-def add_data(user_id,password,user_details,*var): #length of var = 8
+def add_data(user_id,password,user_details,*var): #length of var = 8/ This function adds new user data to the existing data structures
     user_details[str(var[7])] = {'name':var[0],'age':var[1],'gender':var[2],
                                  'phone':var[3],'address':var[4],'balance':var[5]}
     password.append(var[6])

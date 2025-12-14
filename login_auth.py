@@ -10,7 +10,7 @@ def id_chk(id,user_id): # checking existing user or not
             return pos
     return -1
 
-def password_chk(pos,password): # checking correct password
+def password_chk(pos,password): # password Authentication
     attempt = 3
     while attempt>0:
         pwd = input('enter your password: ').strip()

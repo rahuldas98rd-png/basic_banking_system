@@ -1,6 +1,6 @@
 #this file is for user input authentication
 
-def string_validation(): # code for yes & no validation
+def string_validation(): # code for string option validation
     while True:
         try:
             n = input('Enter choice: ').strip().lower()
